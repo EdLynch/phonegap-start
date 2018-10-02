@@ -1,0 +1,27 @@
+<html>
+	<head>
+		<script src="jQ.js"></script>
+		<script src="script.js"></script>
+		<link rel="stylesheet" href="bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<table id="main">
+		</table>
+		<aside id="options">
+			<h2>Options</h2>
+			<button class="btn btn-primary" id="step" onclick="Update()">Step</button><br/>
+			<button class="btn btn-primary" id="play" onclick="Play()">Play</button><br/>
+			<input type="range" min="1" max="20" value="5" class="slider" id="speed"><br/>
+			<div><span id="speedDisplay">50</span> Itterations per second</div><br/>
+			<button class="btn btn-primary" id="stop" onclick="Stop()" disabled>Stop</button><br/>
+			<button class="btn btn-primary" id="clear" onclick="Clear()">Clear</button><br/>
+			<h3>Y-Amount</h3>
+			<input type="range" min="10" max="50" value="20" class="slider" id="width"><br/>
+			<div><span id="widthDisplay">20</span></div><br/>
+			<h3>X-Amount</h3>
+			<input type="range" min="10" max="50" value="20" class="slider" id="height"><br/>
+			<div><span id="heightDisplay">20</span></div><br/>
+		</aside>
+	</body>
+</html>
